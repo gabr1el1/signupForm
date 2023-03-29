@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    min-height: 100vh;
+}
+@font-face {
+    font-family: connection;
+    src: url(./connection/Connection.otf);
+}
+:root {
+    --main-color: rgb(1, 255, 119);
+    --focus-color: cyan;
+}
+
+:root.dark-theme {
+    --fg-color: white;
+    --bg-color: rgb(6, 11, 114);
+    --input-bg-color: rgb(33, 2, 73);
+    --highlight-color: rgb(9, 15, 135);
+}
+
+:root.light-theme {
+    --fg-color: black;
+    --bg-color: beige;
+    --input-bg-color: white;
+    --highlight-color: rgb(200, 200, 173);
+}
+
+
+
+body {
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body section {
+    position: relative;
+    flex: 1;
+    background-image: url("./bg2.jpg");
+    background-size: cover;
+}
+
+body section .logo-info {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(128, 128, 128, 0.282);
+}
+
+body section .logo-info img {
+    width: 50%;
+}
+
+body section .logo-info div {
+    font-family: connection, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    font-size: 2rem;
+    background: linear-gradient(to right, var(--main-color), var(--focus-color), white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main .segment {
+    flex: 1;
+}
+
+.segment {
+    padding: 20px;
+}
+
+.segment:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.theme-icon {
+    text-align: right;
+    user-select: none;
+    transition: all 0.4s;
+}
+
+.segment:nth-of-type(2) {
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    background-color: var(--highlight-color);
+}
+
+.title {
+    font-family: connection;
+    font-size: 40px;
+    background: linear-gradient(to right, rgb(1, 255, 119), cyan, white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+form input {
+    background-color: var(--input-bg-color);
+    color: var(--fg-color);
+    height: 30px;
+    font-size: 1.2rem;
+}
+form input:focus{
+    outline: thin solid var(--focus-color)
+}
+.alert{
+    color: red;
+}
+button{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    transition: all 0.4s;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: var(--focus-color);
+}
+main a{
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.4s all;
+}
+main a:hover{
+    color: var(--focus-color);
+}

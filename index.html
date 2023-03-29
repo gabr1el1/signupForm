@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./validation.js" defer></script>
+    <script src="./theme-choice.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section>
+        <div class="logo-info">
+            <img src="./game-controller.png" alt="controller logo">
+            <div><p>Game</p><p>Core</p></div>
+        </div>
+    </section>
+    <main>
+        <div class="segment">
+            <span class="material-symbols-outlined theme-icon">
+                light_mode
+                </span>
+            <p>
+                This is not a real online service! You know you need something likme this in your life to help
+                you in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+            </p>
+            <p>
+                You know you want to.
+            </p>
+        </div>
+        <div class="segment">
+            <div>
+                <h1 class="title">Let's do this</h1>
+            </div>
+            <form action="" id="form-signup">
+                
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" title="hey" type="text">
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" type="text">
+                    </div>
+                    
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input id="phone-number" type="tel">
+                    </div>
+                    <div>
+                        <label for="password" >PASSWORD</label>
+                        <input id="password" minlength="4" type="password">
+                        <p class="alert"></p>
+                    </div>
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input  id="confirm-password" minlength="4" type="password">
+                    </div>
+            </form>   
+        </div>
+        <div class="segment">
+            <div class="signup-login">
+                <button type="submit" id="submit-button"form="form-signup">Create account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
